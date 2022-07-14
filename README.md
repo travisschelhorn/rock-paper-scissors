@@ -35,10 +35,10 @@ Play a game
 python game.py
 ```
 
-Choose a name for your player (e.g. 'John Doe')
+Choose a username for your player (e.g. 'John Doe')
 
 ```
-PLAYER_NAME="John Doe" python game.py
+Username="John Doe" python game.py
 ```
 
 Make your selection
@@ -47,14 +47,13 @@ Make your selection
 user_selection = input("Please make a selction ('rock', 'paper', 'scissors'):")
 ```
 
-
 Simulate Computer Selection
 
 The application should select one of the options (i.e. "rock", "paper", or "scissors") at random, and assign that as the computer player's choice.
 
 
 ```
-
+computer = (random.choice(options))
 ```
 # Determining the Winner
 The application should compare the user's selection to the computer player's selection, and determine which selection is the winner. The following logic should govern that determination:
@@ -66,6 +65,18 @@ The application should compare the user's selection to the computer player's sel
 + Rock vs Rock, Paper vs Paper, and Scissors vs Scissors each results in a "tie"
 
 
-```
+# Displaying Results
+An example of a dsired output after one game:
 
 ```
+Rock, Paper, Scissors
+Welcome to the Rock Paper Scissors Game
+Please enter your username: Travis
+It's great to meet you  Travis
+Please make a selection ('rock', 'paper', 'scissors'):rock
+Your choice:  rock
+Computer chose scissors
+Congratulations! You win!
+This is the end of the game. Thank you for playing.
+```
+

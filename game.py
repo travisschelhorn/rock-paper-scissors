@@ -8,13 +8,17 @@ print("Welcome to the Rock Paper Scissors Game")
 
 # User Inputs
 
-user_selection = input("Please make a selction ('rock', 'paper', 'scissors'):")
+username = input("Please enter your username:")
+
+print("It's great to meet you",username)
+
+user_selection = input("Please make a selection ('rock', 'paper', 'scissors'):")
 
 # Standardization
 
 user_selection = user_selection.lower() 
 
-print("your choice: ",(user_selection))
+print("Your choice: ",(user_selection))
 
 # Options 
 options = ["rock", "paper", "scissors"]
